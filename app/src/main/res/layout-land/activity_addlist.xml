@@ -1,0 +1,124 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context="com.example.ravit.shoppinglist.AddList">
+
+    <TableRow>
+
+
+        <EditText
+            android:id="@+id/itemName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#000"
+            android:inputType="textPersonName"
+            android:hint="Enter the Item Name"
+            android:textColorHint="#767272" />
+
+    </TableRow>
+
+    <TableRow>
+
+        <EditText
+            android:id="@+id/itemPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#000"
+            android:inputType="numberDecimal"
+            android:textColorHint="#767272"
+            android:hint="Enter the item price"
+            />
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/itemTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="Select number of items"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/itemSize"
+            android:layout_width="120dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:entries="@array/item_size"/>
+
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/favTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="Is this your favorite Item?"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/itemFav"
+            android:layout_width="120dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:entries="@array/fav_options"
+            />
+
+           <!-- <ToggleButton android:id="@+id/itemFav"
+                android:layout_width="120dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content"
+                />-->
+
+
+
+    </TableRow>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center|bottom"
+        android:layout_marginTop="10dp">
+
+
+        <Button android:id="@+id/save"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center"
+            android:text="Save to the List"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/button_round"
+            />
+
+    </LinearLayout>
+
+
+</TableLayout>
